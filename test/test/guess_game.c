@@ -20,7 +20,7 @@ void game(){
 			printf("猜大了\n");
 		}
 		else if (guess < ret){
-			printf("猜小了");
+			printf("猜小了\n");
 		}
 		else{
 			printf("恭喜你，猜对了！\n");
@@ -29,9 +29,9 @@ void game(){
 	}
 }
 
-/*int main(){
+int main(){
 	int key;
-	// 时间戳是指现在时间到计算机当时的时间差,单位是秒
+	 //时间戳是指现在时间到计算机当时的时间差,单位是秒
 	//计算机当时时间是1970-01-01 08:00:00
 	//time返回的是个时间戳
 	srand((unsigned int)time(NULL));
@@ -49,4 +49,4 @@ void game(){
 		}
 	} while (key);
 	return 0;
-}*/
+}
