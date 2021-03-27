@@ -3,6 +3,7 @@
 #include<malloc.h>
 #include<string.h>
 #include<errno.h>
+#include<stdlib.h>
 #define MAX 3
 //联系人的数据信息
 struct Data
@@ -35,3 +36,9 @@ void Modify(Con* pContact);
 
 //查找
 void Find(Con* pContact);
+
+//清空
+void Clear(Con* pContact);
+
+//排序
+void Sort(Con* pContact);

@@ -161,5 +161,29 @@ void Find(Con* pContact)
 		}
 		printf("无此人\n");
 	}
-	
+}
+
+//清空
+void Clear(Con* pContact)
+{
+	pContact->count = 0;
+}
+
+int cmpare(const void* e1, const void* e2)
+{
+	return strcmp(((struct Data*)e1)->name,((struct Data*)e2)->name);
+}
+//排序
+void Sort(Con* pContact)
+{
+	//判断通讯录是否为空
+	if (pContact->count == 0)
+	{
+		printf("通讯录为空\n");
+	}
+	else
+	{
+		qsort(pContact->data, pContact->count, sizeof(pContact->data[0]), cmpare);
+		printf("排序成功!\n");
+	}
 }

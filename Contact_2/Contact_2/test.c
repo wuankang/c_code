@@ -17,7 +17,7 @@ void menu()
 }
 enum Choice 
 {
-	exit,
+	Exit,
 	add,
 	del,
 	find,
@@ -45,19 +45,21 @@ int main()
 			Del(&book);//删除
 			break;
 		case show:
-			Show(&book);
+			Show(&book);//展现
 			break;
 		case modify:
-			Modify(&book);
+			Modify(&book);//修改
 			break;
-		case clear:
+		case clear://清空
+			Clear(&book);
 			break;
-		case sort:
+		case sort://分类
+			Sort(&book);
 			break;
 		case find:
-			Find(&book);
+			Find(&book);//查找
 			break;
-		case exit:
+		case Exit:
 			printf("退出成功!\n");
 			break;
 		default:
